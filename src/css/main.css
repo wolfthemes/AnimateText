@@ -1,0 +1,29 @@
+[data-animation="title"],
+[data-animation="subtitle"],
+[data-animation="paragraph"] {
+    overflow: hidden;
+    visibility: hidden;
+}
+
+[data-animation="title"] .char,
+[data-animation="subtitle"] .word,
+[data-animation="paragraph"] .line {
+    transform: translateY(100%);
+    transition: transform 1s cubic-bezier(.73, 0, .13, 1);
+}
+
+.line-wrapper{
+    overflow: hidden;
+}
+
+.loaded [data-animation="title"],
+.loaded [data-animation="subtitle"],
+.loaded [data-animation="paragraph"] {
+    visibility: visible;
+}
+
+.loaded [data-animation="title"] .char,
+.loaded [data-animation="subtitle"] .word,
+.loaded [data-animation="paragraph"] .line {
+    transform: translateY(0);
+}
