@@ -2,6 +2,7 @@ class AnimateText {
 
     element;
     type;
+    delay;
     
     constructor( element, type ) {
 
@@ -9,9 +10,9 @@ class AnimateText {
 
         this.element = element;
         this.type = type;
-
         this.delay = Number(animationDelay);
         
+        // Init SplitType
         this.init();
 
         // Re-initialize the Split Text on window resize.
