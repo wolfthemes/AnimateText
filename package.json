@@ -1,15 +1,14 @@
 {
-  "name": "animated-text",
+  "name": "AnimateText",
   "version": "1.0.0",
-  "description": "",
+  "description": "A super minimal JS script to animate text using SplitType",
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build src/index.html --no-content-hash --no-minify --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "WolfThemes",
   "devDependencies": {
     "parcel": "^2.6.2"
   }
