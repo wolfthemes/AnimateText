@@ -4,7 +4,7 @@
   "description": "A super minimal JS script to animate text using SplitType",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "clean": "rm -rf dist/*",
+    "clean": "rm -rf dist/* && rm -rf .cache && .parcel-cache",
     "build:parcel": "parcel build src/index.html --no-content-hash --no-minify --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
